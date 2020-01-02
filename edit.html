@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Knowtes</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" integrity="sha256-ECB9bbROLGm8wOoEbHcHRxlHgzGqYpDtNTgDTyDz0wg=" crossorigin="anonymous" /> -->
+        <link rel="stylesheet" href="styles/styles.css">
+    </head>
+       
+        <body>
+
+            <header class="header">
+                <div class="container">
+                        <h1 class="header__title">Knowtes</h1>
+                        <h2 class="header__subtitle">Take notes and never forget</h2>
+                    </div>
+                </header>
+
+            <div class="container">
+            <input class="title-input" id="note-title" placeholder="Note Title">
+            </div>
+            <div class="container"></div>
+            <div class="container">
+            <textarea class="body-input" id="note-body" placeholder="Enter note text"></textarea>
+            </div>
+           
+            <div class="actions">
+                <div class="actions__container actions__container--spaced">
+                    <span id="last-updated"></span>
+                    <button class="button button-secondary" id="remove-note">Remove note</button>
+                    <button class="button button-primary" id="home">Back to Notes</button>
+                </div>
+            </div>
+
+            <script src="scripts/uuid.js"></script>
+            <script src="scripts/moment.js"></script>
+            <script src="scripts/notes-functions.js"></script>
+            <script src="scripts/notes-edit.js"></script>
+        </body>
+    
+</html>
